@@ -13,4 +13,4 @@ data:
 vector_store:
   type: 'faiss'
   base_path: '../data/vector_store'
-token: "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"
+token: null
