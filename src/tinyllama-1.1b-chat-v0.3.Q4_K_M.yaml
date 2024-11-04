@@ -1,0 +1,16 @@
+model:
+  source: 'huggingface_hub'
+  name: 'TheBloke/TinyLlama-1.1B-Chat-v0.3-GGUF'
+  file: 'tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf'
+  prompt: "<|im_start|>system
+    {system_message}<|im_end|>
+    <|im_start|>user
+    {query}<|im_end|>
+    <|im_start|>assistant"
+data:
+  base_path: '../data/'
+  docs_path: '../data/docs/'
+vector_store:
+  type: 'faiss'
+  base_path: '../data/vector_store'
+token: null

@@ -1,0 +1,1 @@
+This folder should contain the functions or helper scripts utilized in your pipeline. You can stash these functions according to their connection in functionality, such as a software product.

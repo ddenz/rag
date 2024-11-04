@@ -1,0 +1,16 @@
+model:
+  source: 'gpt4all'
+  name: 'orca-mini-3b-gguf2-q4_0'
+  file: 'orca-mini-3b-gguf2-q4_0.gguf'
+  prompt: "<|im_start|>system
+    {system_message}<|im_end|>
+    <|im_start|>user
+    {query}<|im_end|>
+    <|im_start|>assistant"
+data:
+  base_path: '../data/'
+  docs_path: '../data/docs/'
+vector_store:
+  type: 'faiss'
+  base_path: '../data/vector_store'
+token: null

@@ -1,0 +1,16 @@
+model:
+  source: 'huggingface_hub'
+  name: 'meta-llama/Llama-3.2-1B'
+  file: null
+  prompt: "<|im_start|>system
+    {system_message}<|im_end|>
+    <|im_start|>user
+    {query}<|im_end|>
+    <|im_start|>assistant"
+data:
+  base_path: '../data/'
+  docs_path: '../data/docs/'
+vector_store:
+  type: 'faiss'
+  base_path: '../data/vector_store'
+token: "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"
